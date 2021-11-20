@@ -62,8 +62,16 @@ header{
 .nav-bar .member-btn button{
     width: 150px;
     cursor: pointer;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
     height: 40px;
     color: black;
+    transform-style: preserve-3d ;
+    transition: all ease-in-out 1s;
+}
+.nav-bar .member-btn button:hover{
+    transform: rotateX(360deg);
 }
 .content{
     margin-left: 70px;
