@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+
+
+header{
+    height: 100vh;
+    position: relative;
+    background: url("b2.jpg") center center/cover;
+    background-repeat: no-repeat;
+}
+.logo{
+    width: 15%;
+    /* background-color: chartreuse; */
+}
+.logo img{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.navigation{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+.navigation ul li{
+    list-style: none ;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 0 25px;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+}
+.navigation ul li:hover{
+    text-decoration: underline;
+}
+.navigation ul{
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-bar .member-btn{
+    width: 160px;
+
+}
+.nav-bar .member-btn button{
+    width: 150px;
+    cursor: pointer;
+    height: 40px;
+    color: black;
+}
+.content{
+    margin-left: 70px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    height: 40%;
+    width: 30%;
+    /* background-color: turquoise; */
+}
+.content p{
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Anton', sans-serif;
+    font-size: 4.2rem;
+}
+.content h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: red;
+    
+}
+ .main{
+     padding: 30px;
+     justify-content: space-around;
+     display: flex;
+    /* background-color: red; */
+    height: 650px;
+}
+.main .img-cont{
+    height: 400px;
+    width: 400px;
+}
+.right-cont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    width: 600px;
+    /* background-color: rosybrown; */
+}
+.right-cont h2{
+    margin: 30px 0;
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    color: red;
+}
+.right-cont .first{
+    text-align: justify;
+    font-size: 3rem;
+    color: #312851;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 20px;
+}
+.right-cont .second{
+    text-align: justify;
+    font-size: 4rem;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.img-cont img{
+    width: 100%;
+}
+/* form */
+.form-area{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background-color: wheat;
+}
+.form-area .center{
+    width: 70%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    /* background-color: royalblue; */
+}
+.name input{
+    margin-top: 20px;
+    width: 500px;
+    height: 45px;
+}
+.name h3{
+    font-size: 3.5rem;
+    display: inline-block;
+}
+.intro {
+    height: 50px;
+  
+    margin-bottom: 10px;
+}
+.intro h2{
+    font-size: 4rem;
+}
+.name input[type="text"],.name input[type="number"]{
+    padding-left: 20px;
+}
+.name input::placeholder{
+    font-size: 2rem;
+}
+/* testimonial */
+.testimonial-sec{
+    width: 100%;
+
+    padding: 20px;
+    /* background-color: red; */
+}
+.testimonial-text{
+    text-align: center;
+    font-size: 3rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.parent{
+    padding: 20px;
+    display: flex;
+}
+.parent .box{
+    height: auto;
+    width: 400px;
+    margin:0 20px ;
+    /* border: 2px solid white; */
+    box-shadow: 10px 10px 12px black;
+}
+.box h3{
+    font-size: 3rem;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+.parent .box p{
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    padding:15px;
+}
+.parent .box img{
+    height: 50%;
+    width: 100%;
+}
+/* media */
+@media (max-width:1025px){
+    html{
+        font-size: 9px;
+    }
+    .content{
+        margin-top: 50px;
+        height: 300px;
+        /* border: 2px solid white; */
+    }
+    .right-cont .second{
+        text-align: justify;
+        font-size: 4rem;
+    }
+}
+@media (max-width:769px){
+    html{
+        font-size: 8px;
+    }
+    .logo{
+        width: 15%;
+        /* border: 2px solid white; */
+    }
+    .logo img{
+        width: 100%;
+    }
+    .navigation ul li{
+        padding: 0 10px;
+    }
+    .member-btn{
+
+        /* border: 2px solid white; */
+    }
+    .member-btn button{
+        width: 100%;
+    }
+    .main{
+        height: 470px;
+    }
+    .content{
+        position: absolute;
+        left: -40px;
+        /* border: 2px solid white; */
+    }
+    .right-cont .second{
+        font-size: 3rem;
+    }
+    .parent{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .box{
+        margin-bottom: 45px !important;
+    }
+    .box p{
+        font-size: 3rem !important;
+    }
+    
+}
+@media (max-width:426px){
+    html{
+        font-size: 5px;
+    }
+    .nav-bar{
+        flex-direction: column;
+    }
+    .content h2{
+        margin-bottom: 10px;
+    }
+    .content h2, .content p{
+        text-align: justify;
+        font-size: 3.5rem;
+    }
+    .content{
+        width: 100px;
+        top: 30px;
+        left: -60px;
+    }
+    .member-btn button{
+        display: none;
+    }
+    .main{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .img-cont {
+        width: 90% !important;
+       height: 300px;
+    }
+    .img-cont img{
+       width: 100%;
+       height: 100%;
+    }
+    .right-cont{
+        width: 400px;
+    }
+    .right-cont .second{
+        font-size: 4rem;
+    }
+    .form-area .name{
+        width: 100%;
+    }
+  .form-area .name input{
+      width: 100%;
+  }
+}
